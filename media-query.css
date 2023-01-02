@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 800px) {
-    menu > .list-menu > .close-icon,
+    menu .menu-list .close-icon,
     header .menu-icon {
         display: block;
     }
 
-    menu > .list-menu {
+    menu .menu-list {
         position: fixed;
         top: 0;
         right: 0;
@@ -21,7 +21,7 @@
         background-color: rgb(116, 0, 214);
     }
 
-    menu .list-menu li {
+    menu .menu-list li {
         font-size: 30px;
     }
 
@@ -36,7 +36,7 @@
     }
 
     main .left-content h1 {
-        font-size: 3em;
+        font-size: 3rem;
     }
 
     main .right-content {

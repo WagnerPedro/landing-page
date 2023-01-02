@@ -13,6 +13,7 @@ body {
     background-color: rgb(116, 0, 214);
 }
 
+/* CONTAINER STYLES */
 .container {
     max-width: 1400px;
     display: block;
@@ -20,6 +21,7 @@ body {
     padding: 0 3%;
 }
 
+/* HEADER STYLES */
 header {
     display: flex;
     align-items: center;
@@ -33,15 +35,16 @@ header .menu-icon {
     display: none;
 }
 
+/* MENU STYLES */
 menu {
     position: relative;
 }
 
-menu .list-menu {
+menu .menu-list {
     list-style-type: none;
 }
 
-menu > .list-menu > .close-icon {
+.close-icon {
     cursor: pointer;
     position: absolute;
     top: 30px;
@@ -49,26 +52,27 @@ menu > .list-menu > .close-icon {
     display: none;
 }
 
-nav.active .menu-list {
+menu.active .menu-list {
     transform: translateX(0);
 }
 
-menu .list-menu li {
+menu .menu-list li {
     display: inline-block;
     padding: 20px;
     font-size: 20px;
 }
 
-menu .list-menu a {
+menu .menu-list a {
     color: white;
     text-decoration: none;
     transition: all 0.5s;
 }
 
-menu .list-menu a:hover {
+menu .menu-list a:hover {
     color: rgb(231, 191, 241);
 }
 
+/* MAIN STYLES */
 main {
     margin-top: 30px;
     display: flex;
@@ -79,11 +83,11 @@ main {
 main .left-content {
     color: white;
     width: 50%;
-    padding: 20px;
+    padding: 20px; 
 }
 
 main .left-content h1 {
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: lighter;
     letter-spacing: 1px;
 }
