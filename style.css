@@ -6,6 +6,7 @@
     box-sizing: border-box;
     border: none;
     outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -17,5 +18,53 @@ body {
     display: block;
     margin: 0 auto;
     padding: 0 3%;
-    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .menu-icon {
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+menu {
+    position: relative;
+}
+
+menu .list-menu {
+    list-style-type: none;
+}
+
+menu > .list-menu > .close-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: none;
+}
+
+nav.active .menu-list {
+    transform: translateX(0);
+}
+
+menu .list-menu li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+menu .list-menu a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+menu .list-menu a:hover {
+    color: rgb(231, 191, 241);
 }
